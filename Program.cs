@@ -13,7 +13,7 @@ namespace GuessingGame
             Console.WriteLine("Your guess (1)");
             if(guessOne == secretNumber)
             {
-                Console.WriteLine("You guessed it correctly!");
+                Console.WriteLine("You guessed it correctly! Great job!");
                 Environment.Exit(0);
             }
             else 
@@ -26,7 +26,7 @@ namespace GuessingGame
 
             if(guessTwo == secretNumber)
             {
-                Console.WriteLine("You guessed it correctly!");
+                Console.WriteLine("You guessed it correctly! Great job!");
                 Environment.Exit(0);
             }
             else 
@@ -38,7 +38,7 @@ namespace GuessingGame
             string guessThree = Console.ReadLine();
             if(guessThree == secretNumber)
             {
-                Console.WriteLine("You guessed it correctly!");
+                Console.WriteLine("You guessed it correctly! Great job!");
                 Environment.Exit(0);
             }
             else 
@@ -50,7 +50,7 @@ namespace GuessingGame
             string guessFour = Console.ReadLine();
             if(guessFour == secretNumber)
             {
-                Console.WriteLine("You guessed it correctly!");
+                Console.WriteLine("You guessed it correctly! Great job!");
                 Environment.Exit(0);
             }
             else 
