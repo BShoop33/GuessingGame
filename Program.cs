@@ -199,11 +199,6 @@ namespace GuessingGame
                         }
                         Console.WriteLine("--------------------------------------------");
                     }
-
-
-
-
-
             }
 
             if(difficulty.ToLower() == "medium")
@@ -450,7 +445,40 @@ namespace GuessingGame
                             Console.WriteLine("Hint:  Your guess was too low!");
                         }
                         Console.WriteLine("--------------------------------------------");
+                    }            
+            }
+
+            if(difficulty.ToLower() == "cheater")
+            {
+                Random r = new Random();
+                int genRand = r.Next(1,100);
+                // Console.WriteLine($"The secret number is:  {genRand}");
+
+                while(1==1)
+                {
+                    Console.WriteLine("Please guess a secret number . . .");
+                    string guessOne = Console.ReadLine();
+                    int firstGuess = int.Parse(guessOne);
+                    if(firstGuess == genRand)
+                    {
+                        Console.WriteLine("You guessed it correctly! Great job, Cheater!");
+                        Environment.Exit(0);
                     }
+                    else 
+                    {
+                        Console.WriteLine("You guessed it incorrectly.");
+                        Console.WriteLine("You have infinite guesses remaining . . .");
+                        if(firstGuess > genRand)
+                        {
+                            Console.WriteLine("Hint:  Your guess was too high!");
+                        }
+                        else
+                        {
+                            Console.WriteLine("Hint:  Your guess was too low!");
+                        }
+                        Console.WriteLine("--------------------------------------------");
+                    }
+                }
             }
         }
     }
