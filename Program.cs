@@ -22,6 +22,14 @@ namespace GuessingGame
             {
                 Console.WriteLine("You guessed it incorrectly.");
                 Console.WriteLine("You have three guesses remaining . . .");
+                if(firstGuess > genRand)
+                {
+                    Console.WriteLine("Hint:  Your guess was too high!");
+                }
+                else
+                {
+                    Console.WriteLine("Hint:  Your guess was too low!");
+                }
                 Console.WriteLine("--------------------------------------------");
             }
             
@@ -37,6 +45,14 @@ namespace GuessingGame
             {
                 Console.WriteLine("You guessed it incorrectly.");
                 Console.WriteLine("You have two guesses remaining . . .");
+                if(secondGuess > genRand)
+                {
+                    Console.WriteLine("Hint:  Your guess was too high!");
+                }
+                else
+                {
+                    Console.WriteLine("Hint:  Your guess was too low!");
+                }
                 Console.WriteLine("--------------------------------------------");
             }
             
@@ -52,6 +68,14 @@ namespace GuessingGame
             {
                 Console.WriteLine("You guessed it incorrectly.");
                 Console.WriteLine("You have one guess remaining . . .");
+                if(thirdGuess > genRand)
+                {
+                    Console.WriteLine("Hint:  Your guess was too high!");
+                }
+                else
+                {
+                    Console.WriteLine("Hint:  Your guess was too low!");
+                }
                 Console.WriteLine("--------------------------------------------");
             }
             
@@ -67,6 +91,14 @@ namespace GuessingGame
             {
                 Console.WriteLine("You guessed it incorrectly.");
                 Console.WriteLine("You have no more guesses . . .");
+                if(fourthGuess > genRand)
+                {
+                    Console.WriteLine("Hint:  Your guess was too high!");
+                }
+                else
+                {
+                    Console.WriteLine("Hint:  Your guess was too low!");
+                }
                 Console.WriteLine("--------------------------------------------");
             }
         }
